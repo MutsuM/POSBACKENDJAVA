@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="226" pageHeight="300" columnWidth="186" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="40bf4904-e976-4de3-99c3-304b03edcd06">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="plato" class="java.lang.String"/>
+	<field name="notas" class="java.lang.String"/>
+	<field name="cantidad" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="0" width="96" height="20" uuid="40575cc8-bc55-4603-befe-764a47f9a969"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMANDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="0" width="86" height="20" uuid="e9f45ce8-022c-42b6-8922-6e9306b5d8a3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Orden #: 12345]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-17" y="20" width="82" height="32" uuid="3a7f0c10-b8cf-42f1-9df9-d515c81149cf"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Marko Pachas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="20" width="47" height="32" uuid="d0aee67a-b94d-41f2-afa2-bd317aadff23"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Delivery]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="20" width="76" height="12" uuid="0466be23-bfc1-4518-b9a7-8570c06ee54d"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[09/04/2024]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="32" width="76" height="20" uuid="ba8e7490-bbd9-484f-b25f-fd403a01828c"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[09:15 am]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="0" width="100" height="30" uuid="26c001a9-1a70-4936-abac-0db1b4d44a82">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0308dfa9-54e2-4d40-8d37-82d70d284125"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Plato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="131" y="0" width="54" height="30" uuid="4d6d5e81-cd1f-46f5-ab7d-4d419cad84a8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8b7ff082-096b-4e98-8f0f-24ee79e75112"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="-18" y="0" width="186" height="20" uuid="b8ac761b-6873-4329-9756-ca1cadc2c4df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0308dfa9-54e2-4d40-8d37-82d70d284125"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{plato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="0" width="18" height="30" uuid="e36ed1df-80ba-48b5-a3a0-691f1e74ac29">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8b7ff082-096b-4e98-8f0f-24ee79e75112"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-17" y="20" width="148" height="13" uuid="8a4406ec-2ce1-4654-a299-b0eaa0fef580">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0308dfa9-54e2-4d40-8d37-82d70d284125"/>
+				</reportElement>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA["-" + $F{notas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="-17" y="0" width="167" height="20" uuid="174a5527-f547-41c3-8842-58645ba0189b"/>
+				<text><![CDATA[Le atendió Marko Pachas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="25" width="167" height="20" uuid="0ea28890-023a-47e5-ba88-607872c39a32"/>
+				<text><![CDATA[Gracias por su visita, vuelva pronto]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

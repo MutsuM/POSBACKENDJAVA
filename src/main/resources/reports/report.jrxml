@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="226" pageHeight="1417" columnWidth="186" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="40bf4904-e976-4de3-99c3-304b03edcd06">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="mm"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="cm"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="servicio" class="java.lang.String"/>
+	<field name="precio" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="50" y="0" width="100" height="20" uuid="40575cc8-bc55-4603-befe-764a47f9a969"/>
+				<text><![CDATA[BOLETA DE VENTA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="114" splitType="Stretch">
+			<line>
+				<reportElement x="-20" y="-1" width="226" height="1" uuid="03dad34b-6b02-4850-87b4-937d472acbac"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="-16" y="2" width="100" height="20" uuid="3a7f0c10-b8cf-42f1-9df9-d515c81149cf"/>
+				<text><![CDATA[KOLÉ S.A.C ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-16" y="15" width="226" height="20" uuid="d0aee67a-b94d-41f2-afa2-bd317aadff23"/>
+				<text><![CDATA[Av. Victor Andres Belaunde Oeste 618 - Comas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-17" y="30" width="100" height="20" uuid="0466be23-bfc1-4518-b9a7-8570c06ee54d"/>
+				<text><![CDATA[Movíl: 961831444]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="30" width="100" height="20" uuid="3bcbcbbb-fb78-4ea4-a9c3-39790ae33770"/>
+				<text><![CDATA[RUC: 20604153698
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="51" width="226" height="1" uuid="35b1e636-e017-4c13-b4a1-290ef8e8b7c1"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="-20" y="52" width="100" height="20" uuid="e9f45ce8-022c-42b6-8922-6e9306b5d8a3"/>
+				<text><![CDATA[Boleta #: 12345]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="70" width="167" height="20" uuid="d99cf03d-6861-4d3b-845c-77ec2eb0fc54"/>
+				<text><![CDATA[Cliente: Leslie Sanchez]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="91" width="167" height="20" uuid="102ac4c2-ea96-4fb5-9159-ceb7bf901f88"/>
+				<text><![CDATA[Fecha Servicio: 07/01/2020]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="100" height="30" uuid="26c001a9-1a70-4936-abac-0db1b4d44a82">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0308dfa9-54e2-4d40-8d37-82d70d284125"/>
+				</reportElement>
+				<text><![CDATA[Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="40" height="30" uuid="4d6d5e81-cd1f-46f5-ab7d-4d419cad84a8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8b7ff082-096b-4e98-8f0f-24ee79e75112"/>
+				</reportElement>
+				<text><![CDATA[Precio]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="-18" y="0" width="148" height="30" uuid="b8ac761b-6873-4329-9756-ca1cadc2c4df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0308dfa9-54e2-4d40-8d37-82d70d284125"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{servicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="60" height="30" uuid="e36ed1df-80ba-48b5-a3a0-691f1e74ac29">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8b7ff082-096b-4e98-8f0f-24ee79e75112"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="-17" y="0" width="167" height="20" uuid="174a5527-f547-41c3-8842-58645ba0189b"/>
+				<text><![CDATA[Le atendió Marko Pachas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="25" width="167" height="20" uuid="0ea28890-023a-47e5-ba88-607872c39a32"/>
+				<text><![CDATA[Gracias por su visita, vuelva pronto]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
